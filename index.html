@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#120713">
+  <meta name="description" content="ئەپێکی تایبەت بۆ گرووپی کۆشکیی ئەووینەکەم">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="logo.png">
+  <title>کۆشکیی ئەووینەکەم</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at top,#35102d,#100710 60%,#050307);
+      color:#fff;font-family:system-ui,"Noto Sans Arabic",sans-serif;min-height:100vh}
+    .wrap{max-width:520px;margin:auto;padding:24px 18px 40px;text-align:center}
+    .logo{width:min(88vw,360px);aspect-ratio:1;border-radius:28px;object-fit:cover;box-shadow:0 12px 45px #0008;margin:10px auto 22px;display:block}
+    h1{font-size:30px;margin:8px 0 6px}
+    .sub{color:#f3bfdc;margin:0 0 25px;font-size:16px}
+    .btn{display:block;text-decoration:none;color:#fff;font-weight:800;font-size:19px;
+      padding:16px 20px;margin:13px 0;border-radius:18px;
+      background:linear-gradient(135deg,#e83f8c,#8e1c69);box-shadow:0 8px 24px #0006}
+    .btn:active{transform:scale(.98)}
+    .info{margin-top:24px;padding:18px;border:1px solid #ffffff18;border-radius:18px;background:#ffffff09;color:#f6d9e8;line-height:1.9}
+    footer{margin-top:25px;color:#a98b9e;font-size:13px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="لۆگۆی کۆشکیی ئەووینەکەم">
+    <h1>کۆشکیی ئەووینەکەم</h1>
+    <p class="sub">جێگای ئەو دڵانەیە کە خۆشیان بە یەکەنی ❤️</p>
+
+    <a class="btn" href="https://facebook.com/groups/1574102433869083/" target="_blank" rel="noopener">
+      👥 چوونە ناو گرووپی فەیسبووک
+    </a>
+
+    <div class="info">
+      بەخێربێیت بۆ ئەپی <b>کۆشکیی ئەووینەکەم</b> 🌹<br>
+      لێرە دەتوانیت بە یەک کرتە بگەیتە گرووپەکەمان.
+    </div>
+
+    <footer>ئەم ئەپە بە خۆڕایی دروستکراوە ❤️</footer>
+  </main>
+  <script>
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+  </script>
+</body>
+</html>
