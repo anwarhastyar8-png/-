@@ -173,25 +173,25 @@ body.dark-mode:before{opacity:.12}body.dark-mode .nav,body.dark-mode .quick-dock
 <div class="app">
 <header class="hero"><img class="logo" src="logo.png"><h1>کۆشکی ئەوینەکەم</h1><p>V7 • کۆشکی ئەوینەکەم — بەشداری و چالاکی</p><div class="hero-pills"><span class="hero-pill">💗 کۆمەڵگەی خۆشەویستی</span><span class="hero-pill">🏆 چالاکی و خاڵ</span><span class="hero-pill">👥 هاوڕێی نوێ</span></div><div class="hero-status"><span>●</span> کۆشکەکە زیندووە • بەشداری بکە و بدرەوشێوە</div></header>
 <nav class="nav">
-<button type="button" class="active" data-page="home" onclick="showPage('home',this)">🏠 سەرەتا</button>
-<button type="button" data-page="members" onclick="showPage('members',this)">👥 ئەندامان</button>
-<button type="button" data-page="membersearch" onclick="showPage('membersearch',this)">🔎 گەڕان</button><button type="button" data-page="achievements" onclick="showPage('achievements',this)">🏅 دەستکەوت</button>
-<button type="button" data-page="rank" onclick="showPage('rank',this)">🏆 Top 10</button>
-<button type="button" data-page="activity" onclick="showPage('activity',this)">⚡ چالاکی</button>
-<button type="button" data-page="posts" onclick="showPage('posts',this)">📝 پۆست</button>
-<button type="button" data-page="profile" onclick="showPage('profile',this)">👤 پڕۆفایل</button>
-<button type="button" data-page="letters" onclick="showPage('letters',this)">💌 نامە</button>
-<button type="button" data-page="notify" onclick="showPage('notify',this)">🔔 ئاگاداری</button>
-<button type="button" data-page="fun" onclick="showPage('fun',this)">🎯 یاری</button>
-<button type="button" data-page="chat" onclick="showPage('chat',this)">💬 چات</button>
-<button type="button" data-page="extras" onclick="showPage('extras',this)">✨ زیاتر</button>
-<button type="button" data-page="newfeatures" onclick="showPage('newfeatures',this)">🧩 نوێ</button>
-<button type="button" data-page="community" onclick="showPage('community',this)">🌟 کۆمەڵگە</button><button type="button" data-page="stories" onclick="showPage('stories',this)">⭕ ستۆری</button><button type="button" data-page="advancedsearch" onclick="showPage('advancedsearch',this)">🔍 گەڕانی پێشکەوتوو</button><button type="button" data-page="procenter" onclick="showPage('procenter',this)">💎 ناوەندی پڕۆفیشناڵ</button><button type="button" data-page="communityplus" onclick="showPage('communityplus',this)">🚀 تایبەتمەندی نوێ</button><button type="button" class="mega-nav" data-page="command" onclick="showPage('command',this)">🧭 داشبۆرد</button>
+<button type="button" class="active" data-page="home" onclick="__switchPage('home',this)">🏠 سەرەتا</button>
+<button type="button" data-page="members" onclick="__switchPage('members',this)">👥 ئەندامان</button>
+<button type="button" data-page="membersearch" onclick="__switchPage('membersearch',this)">🔎 گەڕان</button><button type="button" data-page="achievements" onclick="__switchPage('achievements',this)">🏅 دەستکەوت</button>
+<button type="button" data-page="rank" onclick="__switchPage('rank',this)">🏆 Top 10</button>
+<button type="button" data-page="activity" onclick="__switchPage('activity',this)">⚡ چالاکی</button>
+<button type="button" data-page="posts" onclick="__switchPage('posts',this)">📝 پۆست</button>
+<button type="button" data-page="profile" onclick="__switchPage('profile',this)">👤 پڕۆفایل</button>
+<button type="button" data-page="letters" onclick="__switchPage('letters',this)">💌 نامە</button>
+<button type="button" data-page="notify" onclick="__switchPage('notify',this)">🔔 ئاگاداری</button>
+<button type="button" data-page="fun" onclick="__switchPage('fun',this)">🎯 یاری</button>
+<button type="button" data-page="chat" onclick="__switchPage('chat',this)">💬 چات</button>
+<button type="button" data-page="extras" onclick="__switchPage('extras',this)">✨ زیاتر</button>
+<button type="button" data-page="newfeatures" onclick="__switchPage('newfeatures',this)">🧩 نوێ</button>
+<button type="button" data-page="community" onclick="__switchPage('community',this)">🌟 کۆمەڵگە</button><button type="button" data-page="stories" onclick="__switchPage('stories',this)">⭕ ستۆری</button><button type="button" data-page="advancedsearch" onclick="__switchPage('advancedsearch',this)">🔍 گەڕانی پێشکەوتوو</button><button type="button" data-page="procenter" onclick="__switchPage('procenter',this)">💎 ناوەندی پڕۆفیشناڵ</button><button type="button" data-page="communityplus" onclick="__switchPage('communityplus',this)">🚀 تایبەتمەندی نوێ</button><button type="button" class="mega-nav" data-page="command" onclick="__switchPage('command',this)">🧭 داشبۆرد</button>
 </nav>
 <main class="main">
 <section id="home" class="page active">
-<div class="card"><div class="title">👋 بەخێربێیت بۆ کۆشکی ئەوینەکەم</div><p>ئەم وەشانە V7 ـی بنەڕەتییەکەی پاراستووە و تایبەتمەندییە نوێکانی V11 ـی لەگەڵدا کۆکراونەتەوە.</p><button class="btn" onclick="openFB()">👥 چوونە ناو گروپی فەیسبووک</button><button class="btn alt" onclick="showPage('rank',document.querySelectorAll('.nav button')[2])">🏆 بینینی Top 10</button></div>
-<div class="card"><div class="title">✨ بەشی نوێ</div><div class="feature-grid"><button class="feature-btn" onclick="showPage('posts',document.querySelectorAll('.nav button')[5])">📝 پۆست و کۆمێنت</button><button class="feature-btn" onclick="showPage('profile',document.querySelectorAll('.nav button')[6])">👤 پڕۆفایلی من</button><button class="feature-btn" onclick="showPage('letters',document.querySelectorAll('.nav button')[7])">💌 نامەی خۆشەویستی</button><button class="feature-btn" onclick="showPage('notify',document.querySelectorAll('.nav button')[8])">🔔 ئاگادارییەکان</button></div></div>
+<div class="card"><div class="title">👋 بەخێربێیت بۆ کۆشکی ئەوینەکەم</div><p>ئەم وەشانە V7 ـی بنەڕەتییەکەی پاراستووە و تایبەتمەندییە نوێکانی V11 ـی لەگەڵدا کۆکراونەتەوە.</p><button class="btn" onclick="openFB()">👥 چوونە ناو گروپی فەیسبووک</button><button class="btn alt" onclick="__switchPage('rank',document.querySelectorAll('.nav button')[2])">🏆 بینینی Top 10</button></div>
+<div class="card"><div class="title">✨ بەشی نوێ</div><div class="feature-grid"><button class="feature-btn" onclick="__switchPage('posts',document.querySelectorAll('.nav button')[5])">📝 پۆست و کۆمێنت</button><button class="feature-btn" onclick="__switchPage('profile',document.querySelectorAll('.nav button')[6])">👤 پڕۆفایلی من</button><button class="feature-btn" onclick="__switchPage('letters',document.querySelectorAll('.nav button')[7])">💌 نامەی خۆشەویستی</button><button class="feature-btn" onclick="__switchPage('notify',document.querySelectorAll('.nav button')[8])">🔔 ئاگادارییەکان</button></div></div>
 <div class="card"><div class="title">🏆 Top 10 چالاکترین ئەندامان</div><p class="sub">داتاکان لە Supabase ـەوە وەردەگیرێن.</p><div id="leadersHome"><div class="empty">⏳ بارکردن...</div></div></div>
 <div class="card"><div class="title">📊 ئاماری گروپ</div><div class="grid"><div class="stat"><div class="num" id="statMembers">0</div><div>ئەندام</div></div><div class="stat"><div class="num" id="statPoints">0</div><div>خاڵ</div></div><div class="stat"><div class="num" id="statPosts">0</div><div>پۆست</div></div><div class="stat"><div class="num" id="statComments">0</div><div>کۆمێنت</div></div></div><p class="small">ئەم ژمارانە بە پشتبەستن بە داتای ئەندامەکانی ئەپەکە نوێ دەکرێنەوە.</p></div>
 <div class="card"><div class="title">👑 ئەدمینەکان</div><div class="admins"><div class="admin">حەمەی تاتۆ</div><div class="admin">نینۆی خەیاڵ</div><div class="admin">Muhamad Karim</div><div class="admin">Kcha Barznji</div></div></div>
@@ -221,7 +221,7 @@ body.dark-mode:before{opacity:.12}body.dark-mode .nav,body.dark-mode .quick-dock
 <div class="card profile"><div class="profile-ava" id="profileAva">?</div><div class="title" id="profileName" style="margin-top:9px">ئەندام</div><div id="profileBadge" class="badge-big">ئەندامی نوێ</div><div style="margin-top:10px"><button class="btn" type="button" onclick="document.getElementById('profilePhotoInput').click()">📷 وێنەی پڕۆفایل دابنێ</button><button class="btn alt" type="button" onclick="removeProfilePhoto()">🗑️ سڕینەوەی وێنە</button><input id="profilePhotoInput" type="file" accept="image/*" style="display:none" onchange="setProfilePhoto(event)"><div id="profilePhotoMsg" class="small"></div></div><div class="grid" style="margin-top:12px"><div class="stat"><div class="num" id="profilePoints">0</div><div>خاڵ</div></div><div class="stat"><div class="num" id="profilePosts">0</div><div>پۆست</div></div><div class="stat"><div class="num" id="profileComments">0</div><div>کۆمێنت</div></div><div class="stat"><div class="num" id="profileLikes">0</div><div>لایک</div></div></div><button class="btn" onclick="shareProfileCard()">📤 کارتی پڕۆفایل هاوبەش بکە</button><button class="btn alt" onclick="toggleDarkMode()">🌙 گۆڕینی شێوازی ڕوون/تاریک</button></div>
 <div class="card"><div class="title">🎖️ نیشانەکانی من</div><div id="myBadges"><div class="empty">⏳ بارکردن...</div></div></div><div class="card"><div class="title">🚀 ئاستی من</div><div id="profileLevelBox"><div class="empty">⏳ بارکردن...</div></div></div>
 </section>
-<section id="memberprofile" class="page"><div class="card profile"><button class="mini-btn" type="button" onclick="showPage('members')">← گەڕانەوە</button><div class="profile-ava" id="memberProfileAva" style="margin-top:12px">?</div><div class="title" id="memberProfileName" style="margin-top:9px">ئەندام</div><div id="memberProfileStats" style="margin-top:12px"><div class="empty">⏳ بارکردن...</div></div></div></section>
+<section id="memberprofile" class="page"><div class="card profile"><button class="mini-btn" type="button" onclick="__switchPage('members')">← گەڕانەوە</button><div class="profile-ava" id="memberProfileAva" style="margin-top:12px">?</div><div class="title" id="memberProfileName" style="margin-top:9px">ئەندام</div><div id="memberProfileStats" style="margin-top:12px"><div class="empty">⏳ بارکردن...</div></div></div></section>
 <section id="letters" class="page">
 <div class="card"><div class="title">💌 نامەی خۆشەویستی</div><p class="sub">نامەیەکی جوان بۆ کۆشک بنووسە.</p><textarea id="letterText" class="input" style="width:100%;min-height:100px;resize:vertical" maxlength="500" placeholder="نامەکەت بنووسە... ❤️"></textarea><button class="btn" onclick="sendLetter()">ناردنی نامە 💌</button><div id="letterMsg" class="small"></div></div>
 <div class="card"><div class="title">💗 نامە نوێکان</div><div id="lettersList"><div class="empty">⏳ بارکردن...</div></div></div>
@@ -242,13 +242,13 @@ body.dark-mode:before{opacity:.12}body.dark-mode .nav,body.dark-mode .quick-dock
 <div class="card"><div class="title">🧭 داشبۆردی کۆشکی ئەوینەکەم</div><p class="sub">هەموو زانیارییە گرنگەکانت لە یەک شوێن.</p><div class="grid">
 <div class="stat"><div class="num" id="dashPoints">0</div><div>خاڵی من</div></div><div class="stat"><div class="num" id="dashRank">-</div><div>پلە</div></div><div class="stat"><div class="num" id="dashPosts">0</div><div>پۆستەکانم</div></div><div class="stat"><div class="num" id="dashComments">0</div><div>کۆمێنتەکانم</div></div></div>
 <div id="dashBadges" style="margin-top:10px"></div></div>
-<div class="card"><div class="title">🔔 کورتەی ئاگاداری</div><div id="dashNotifications"><div class="empty">⏳</div></div><button class="btn alt" onclick="showPage('notify',document.querySelector('.nav button[data-page=notify]'))">بینینی هەموو ئاگادارییەکان</button></div>
+<div class="card"><div class="title">🔔 کورتەی ئاگاداری</div><div id="dashNotifications"><div class="empty">⏳</div></div><button class="btn alt" onclick="__switchPage('notify',document.querySelector('.nav button[data-page=notify]'))">بینینی هەموو ئاگادارییەکان</button></div>
 <div class="card"><div class="title">🔥 Trending Now</div><div id="dashTrending"><div class="empty">⏳</div></div></div>
-<div class="card"><div class="title">🎯 ئەرک و خەڵات</div><div id="dashMissions"><div class="empty">⏳</div></div><button class="btn" onclick="showPage('extras',document.querySelector('.nav button[data-page=extras]'))">چوون بۆ Reward Center 🎁</button></div>
+<div class="card"><div class="title">🎯 ئەرک و خەڵات</div><div id="dashMissions"><div class="empty">⏳</div></div><button class="btn" onclick="__switchPage('extras',document.querySelector('.nav button[data-page=extras]'))">چوون بۆ Reward Center 🎁</button></div>
 <div class="card"><div class="title">🏅 وەرزی کۆمەڵگە</div><div id="seasonBox"><div class="empty">⏳</div></div></div>
 <div class="card"><div class="title">🖼️ گەلەریی کۆمەڵگە</div><div id="communityMediaGallery" class="feature-grid"><div class="empty">⏳</div></div></div>
 <div class="card"><div class="title">💡 پێشنیارێکت هەیە؟</div><textarea id="suggestionText" class="input" maxlength="500" style="width:100%;min-height:80px;resize:vertical" placeholder="پێشنیارەکەت بنووسە..."></textarea><button class="btn" onclick="sendSuggestion()">ناردنی پێشنیار 💡</button><div id="suggestionMsg" class="small"></div></div>
-<div class="card" id="adminCommand" style="display:none"><div class="title">🛡️ Admin Control Center</div><div class="grid"><div class="stat"><div class="num" id="cmdMembers">0</div><div>ئەندام</div></div><div class="stat"><div class="num" id="cmdReports">0</div><div>ڕاپۆرت</div></div><div class="stat"><div class="num" id="cmdSuggestions">0</div><div>پێشنیار</div></div><div class="stat"><div class="num" id="cmdPending">0</div><div>چاوەڕوان</div></div></div><div id="adminSuggestions" style="margin-top:10px"></div><button class="btn alt" onclick="showPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">کردنەوەی ناوەندی پڕۆفیشناڵ</button></div>
+<div class="card" id="adminCommand" style="display:none"><div class="title">🛡️ Admin Control Center</div><div class="grid"><div class="stat"><div class="num" id="cmdMembers">0</div><div>ئەندام</div></div><div class="stat"><div class="num" id="cmdReports">0</div><div>ڕاپۆرت</div></div><div class="stat"><div class="num" id="cmdSuggestions">0</div><div>پێشنیار</div></div><div class="stat"><div class="num" id="cmdPending">0</div><div>چاوەڕوان</div></div></div><div id="adminSuggestions" style="margin-top:10px"></div><button class="btn alt" onclick="__switchPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">کردنەوەی ناوەندی پڕۆفیشناڵ</button></div>
 </section>
 <div class="footer">کۆشکی ئەوینەکەم • V7 • وەشانی 2.2.0 • ❤️</div>
 
@@ -297,16 +297,16 @@ body.dark-mode:before{opacity:.12}body.dark-mode .nav,body.dark-mode .quick-dock
 <div class="card"><div class="title">🚀 ناوەندی تایبەتمەندییە نوێکان</div><p class="sub">هەموو ئەو بەشانەی داوات کردووە لێرە کۆکراونەتەوە. هیچ پەیوەندییەکی تایبەتی نێوان دوو ئەندام لەم وەشانەدا زیاد نەکراوە.</p></div>
 <div id="communityAnnouncementBanner" class="card" style="display:none"></div>
 <div class="card"><div class="title">🤝 پەیوەندییەکانی ئەندامان</div><p class="sub">ئەم بەشە تەنها بۆ نیشاندانی هاوبەشییە گشتییە؛ هیچ نامەی تایبەت یان چاتی دوو کەسی نییە.</p><div id="publicConnections"></div></div>
-<div class="card"><div class="title">🔔 ئاگادارییە زیرەکەکان</div><p class="sub">ئاگادارییەکانت لە بەشی ئاگاداری کۆدەکرێنەوە. دەتوانیت ئاگادارییەکانی وێبگەڕیش چالاک بکەیت.</p><button class="btn" type="button" onclick="enableBrowserNotifications()">🔔 چالاککردنی ئاگاداریی وێبگەڕ</button><button class="btn alt" type="button" onclick="showPage('notify',document.querySelector('.nav button[data-page=notify]'))">بینینی ئاگادارییەکان</button><div id="browserNotifStatus" class="small"></div></div>
+<div class="card"><div class="title">🔔 ئاگادارییە زیرەکەکان</div><p class="sub">ئاگادارییەکانت لە بەشی ئاگاداری کۆدەکرێنەوە. دەتوانیت ئاگادارییەکانی وێبگەڕیش چالاک بکەیت.</p><button class="btn" type="button" onclick="enableBrowserNotifications()">🔔 چالاککردنی ئاگاداریی وێبگەڕ</button><button class="btn alt" type="button" onclick="__switchPage('notify',document.querySelector('.nav button[data-page=notify]'))">بینینی ئاگادارییەکان</button><div id="browserNotifStatus" class="small"></div></div>
 <div class="card"><div class="title">🗺️ نەخشەی کۆمەڵگە</div><p class="sub">شوێنی ئێستات تەنها لەسەر ئامێرەکەت پیشان دەدرێت؛ بە بێ سێرڤەر یان خزمەتگوزاریی پارەدان.</p><button class="btn" type="button" onclick="getCommunityLocation()">📍 دۆزینەوەی شوێنی من</button><div id="communityLocation" class="notice" style="margin-top:10px">شوێن دیاری نەکراوە.</div></div>
 <div class="card"><div class="title">🎤 پۆستی دەنگی</div><p class="sub">دەنگەکەت تۆمار بکە و لەم ئامێرەدا بیبیستەوە. ئەمە بۆ ڕێکخستنی ئاسان و بێ خەرجییە.</p><div class="post-actions"><button class="mini-btn" type="button" onclick="startVoicePost()">🎙️ دەستپێکردن</button><button class="mini-btn" type="button" onclick="stopVoicePost()">⏹️ وەستاندن</button></div><div id="voiceStatus" class="small"></div><div id="voiceList"></div></div>
-<div class="card"><div class="title">📹 ڤیدیۆی کورت</div><p class="sub">بۆ ڤیدیۆی کورت و هاوبەشکراو، بەشی ستۆری بەکاربهێنە؛ سنووری ڤیدیۆ لە ستۆریدا 15MB ـە.</p><button class="btn" type="button" onclick="showPage('stories',document.querySelector('.nav button[data-page=stories]'))">📹 چوونە ناو ستۆریی ڤیدیۆ</button></div>
-<div class="card"><div class="title">🖼️ گەلەریی کۆمەڵگە</div><p class="sub">گەلەریی وێنە لە وەشانی ئێستادا هەیە و دەتوانیت لە بەشی نوێدا بەکاری بهێنیت.</p><button class="btn" type="button" onclick="showPage('newfeatures',document.querySelector('.nav button[data-page=newfeatures]'));setTimeout(()=>document.getElementById('galleryInput')?.scrollIntoView({behavior:'smooth'}),250)">🖼️ کردنەوەی گەلەری</button></div>
-<div class="card"><div class="title">🔍 گەڕانی بەهێز</div><p class="sub">گەڕان لە ئەندامان، پۆستەکان و کۆمێنتەکاندا.</p><button class="btn" type="button" onclick="showPage('advancedsearch',document.querySelector('.nav button[data-page=advancedsearch]'))">🔍 گەڕانی پێشکەوتوو</button></div>
-<div class="card"><div class="title">📌 بانگەشە و ئاگاداریی سەرەکی</div><p class="sub">ئەدمین دەتوانێت ئاگاداری بڵاو بکاتەوە؛ لێرە نوێترین ئاگاداریش دەردەکەوێت.</p><button class="btn" type="button" onclick="showPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">📢 ناوەندی پڕۆفیشناڵ</button></div>
-<div class="card"><div class="title">🛡️ ڕیزبەندیی مودێریشن</div><p class="sub">ڕاپۆرتەکان و کارەکانی ئەدمین لە ناوەندی پڕۆفیشناڵ کۆدەکرێنەوە.</p><button class="btn" type="button" onclick="showPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">🛡️ بینینی مودێریشن</button></div>
-<div class="card"><div class="title">🧾 مێژووی چالاکیی ئەندام</div><p class="sub">پۆست، کۆمێنت، لایک و چالاکییەکانت لە سیستمەکەدا تۆمار دەکرێن.</p><button class="btn" type="button" onclick="showPage('activity',document.querySelector('.nav button[data-page=activity]'))">⚡ بینینی مێژووی چالاکی</button></div>
-<div class="card"><div class="title">⚙️ ڕێکخستنەکانی کەسی</div><button class="btn" type="button" onclick="toggleDarkMode();renderCommunitySettings()">🌙 گۆڕینی Dark Mode</button><button class="btn alt" type="button" onclick="showPage('members',document.querySelector('.nav button[data-page=members]'))">🔄 گۆڕینی ئەکاونت</button><div id="communitySettingsStatus" class="small"></div></div>
+<div class="card"><div class="title">📹 ڤیدیۆی کورت</div><p class="sub">بۆ ڤیدیۆی کورت و هاوبەشکراو، بەشی ستۆری بەکاربهێنە؛ سنووری ڤیدیۆ لە ستۆریدا 15MB ـە.</p><button class="btn" type="button" onclick="__switchPage('stories',document.querySelector('.nav button[data-page=stories]'))">📹 چوونە ناو ستۆریی ڤیدیۆ</button></div>
+<div class="card"><div class="title">🖼️ گەلەریی کۆمەڵگە</div><p class="sub">گەلەریی وێنە لە وەشانی ئێستادا هەیە و دەتوانیت لە بەشی نوێدا بەکاری بهێنیت.</p><button class="btn" type="button" onclick="__switchPage('newfeatures',document.querySelector('.nav button[data-page=newfeatures]'));setTimeout(()=>document.getElementById('galleryInput')?.scrollIntoView({behavior:'smooth'}),250)">🖼️ کردنەوەی گەلەری</button></div>
+<div class="card"><div class="title">🔍 گەڕانی بەهێز</div><p class="sub">گەڕان لە ئەندامان، پۆستەکان و کۆمێنتەکاندا.</p><button class="btn" type="button" onclick="__switchPage('advancedsearch',document.querySelector('.nav button[data-page=advancedsearch]'))">🔍 گەڕانی پێشکەوتوو</button></div>
+<div class="card"><div class="title">📌 بانگەشە و ئاگاداریی سەرەکی</div><p class="sub">ئەدمین دەتوانێت ئاگاداری بڵاو بکاتەوە؛ لێرە نوێترین ئاگاداریش دەردەکەوێت.</p><button class="btn" type="button" onclick="__switchPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">📢 ناوەندی پڕۆفیشناڵ</button></div>
+<div class="card"><div class="title">🛡️ ڕیزبەندیی مودێریشن</div><p class="sub">ڕاپۆرتەکان و کارەکانی ئەدمین لە ناوەندی پڕۆفیشناڵ کۆدەکرێنەوە.</p><button class="btn" type="button" onclick="__switchPage('procenter',document.querySelector('.nav button[data-page=procenter]'))">🛡️ بینینی مودێریشن</button></div>
+<div class="card"><div class="title">🧾 مێژووی چالاکیی ئەندام</div><p class="sub">پۆست، کۆمێنت، لایک و چالاکییەکانت لە سیستمەکەدا تۆمار دەکرێن.</p><button class="btn" type="button" onclick="__switchPage('activity',document.querySelector('.nav button[data-page=activity]'))">⚡ بینینی مێژووی چالاکی</button></div>
+<div class="card"><div class="title">⚙️ ڕێکخستنەکانی کەسی</div><button class="btn" type="button" onclick="toggleDarkMode();renderCommunitySettings()">🌙 گۆڕینی Dark Mode</button><button class="btn alt" type="button" onclick="__switchPage('members',document.querySelector('.nav button[data-page=members]'))">🔄 گۆڕینی ئەکاونت</button><div id="communitySettingsStatus" class="small"></div></div>
 <div class="card mega-card">
 <div class="title">✨ هەموو تایبەتمەندییە نوێکان — ناوەندی یەکگرتوو</div>
 <p class="sub">ئەم ناوەندە هەموو بەشە نوێکان لە یەک شوێن پیشان دەدات؛ هیچ پەیوەندییەکی تایبەتی نێوان دوو ئەندام تێدا نییە.</p>
@@ -316,8 +316,8 @@ body.dark-mode:before{opacity:.12}body.dark-mode .nav,body.dark-mode .quick-dock
 <button class="mega-tile" type="button" onclick="megaLoadMyHistory()">🧾<b>مێژووی چالاکی</b><span>چالاکییەکانی من</span></button>
 <button class="mega-tile" type="button" onclick="megaLoadStats()">📊<b>ئاماری کۆمەڵگە</b><span>داتای نوێ</span></button>
 <button class="mega-tile" type="button" onclick="megaLoadBadges()">🏅<b>دەستکەوتەکان</b><span>پلە و نیشان</span></button>
-<button class="mega-tile" type="button" onclick="showPage('extras',document.querySelector('.nav button[data-page=extras]'))">🎁<b>خەڵات و Mission</b><span>Reward Center</span></button>
-<button class="mega-tile" type="button" onclick="showPage('community',document.querySelector('.nav button[data-page=community]'))">🎉<b>ڕووداو و دەنگدان</b><span>Community</span></button>
+<button class="mega-tile" type="button" onclick="__switchPage('extras',document.querySelector('.nav button[data-page=extras]'))">🎁<b>خەڵات و Mission</b><span>Reward Center</span></button>
+<button class="mega-tile" type="button" onclick="__switchPage('community',document.querySelector('.nav button[data-page=community]'))">🎉<b>ڕووداو و دەنگدان</b><span>Community</span></button>
 <button class="mega-tile" type="button" onclick="megaSettings()">⚙️<b>ڕێکخستنەکانی کەسی</b><span>ئامادەکردنی ئەپ</span></button>
 </div>
 <div id="megaPanel" class="mega-panel"><div class="empty">یەکێک لە بەشەکان هەڵبژێرە.</div></div>
@@ -334,6 +334,15 @@ const initials=n=>(String(n||'?').trim()[0]||'?');
 let deviceId=localStorage.getItem('koshki_device_id'); if(!deviceId){deviceId=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random());localStorage.setItem('koshki_device_id',deviceId)}
 function myName(){return localStorage.getItem('koshki_member_name')||''}
 async function api(path,opt={}){const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{...opt,headers:{...H,...(opt.headers||{})}});if(!r.ok){let t='';try{t=await r.text()}catch(_){};const e=new Error('HTTP '+r.status+(t?' — '+t.slice(0,220):''));e.status=r.status;e.body=t;throw e}if(r.status===204)return [];const t=await r.text();return t?JSON.parse(t):[]}
+function __switchPage(id,btn){
+  const target=document.getElementById(id);
+  if(!target)return;
+  document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));
+  document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  try{showPage(id,btn)}catch(err){console.error('navigation',id,err)}
+  try{window.scrollTo({top:0,behavior:'smooth'})}catch(e){}
+}
 function showPage(id,btn){const target=document.getElementById(id);if(!target)return;document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');if(btn&&btn.scrollIntoView)btn.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});if(id==='members'||id==='membersearch')loadMembers();if(id==='membersearch')renderQuickMembers();if(id==='rank')loadLeaders();if(id==='activity')loadActivity();if(id==='posts')loadPosts();if(id==='profile')loadProfile();if(id==='letters')loadLetters();if(id==='notify')loadNotifications();if(id==='fun'){loadVotes();loadChallenge()}if(id==='chat'){loadChat();startChatTimer()}if(id==='extras')loadExtras();if(id==='newfeatures'){loadSavedPosts();renderGallery();renderDailyActivity()}if(id==='stories'){loadStories()}if(id==='advancedsearch'){runAdvancedSearch()}scrollTo({top:0,behavior:'smooth'})}
 async function getMemberApproval(name){
  try{
@@ -412,7 +421,15 @@ async function startJoin(){
 }
 async function initNameGate(){
  const gate=document.getElementById('nameGate'),saved=myName();
+ if(!gate)return;
  gate.classList.add('show');document.body.classList.add('gate-open');
+ // A fresh browser/device with no saved app name must always stop at the name gate.
+ if(!saved){
+   renderGateAccounts();
+   const w=document.getElementById('welcomeName');
+   if(w)setTimeout(()=>w.focus(),250);
+   return;
+ }
  /* Admins are trusted app operators and must never be blocked by member approval. */
  if(saved && isAdminName(saved)){
    const adminName=ADMIN_NAMES.find(a=>normalizeName(a)===normalizeName(saved))||saved.trim();
@@ -581,9 +598,10 @@ document.getElementById('memberName').value=myName();document.getElementById('ch
 document.addEventListener('click',function(e){
  const b=e.target.closest('.nav button[data-page]');
  if(!b) return;
- e.preventDefault();
- showPage(b.getAttribute('data-page'),b);
-},true);
+ const id=b.getAttribute('data-page');
+ if(!id)return;
+ __switchPage(id,b);
+},false);
 document.addEventListener('DOMContentLoaded',()=>{
  const w=document.getElementById('welcomeName');
  w.addEventListener('keydown',e=>{if(e.key==='Enter')startJoin()});
@@ -920,7 +938,7 @@ const _showPageOriginal=showPage;showPage=function(id,btn){_showPageOriginal(id,
  window.megaLoadMyHistory=async function(){try{const n=myName();if(!n){set('<div class="notice">⚠️ سەرەتا ناوت تۆمار بکە.</div>');return}const d=await api('activities?select=activity_type,description,points,created_at&member_name=eq.'+encodeURIComponent(n)+'&order=created_at.desc&limit=100');set('<div class="title">🧾 مێژووی چالاکیی من</div>'+(d.map(x=>'<div class="mega-row"><b>'+esc(x.activity_type)+'</b> — '+esc(x.description||'')+(Number(x.points||0)?' <span class="badge">+'+Number(x.points)+' خاڵ</span>':'')+'<div class="small">'+new Date(x.created_at).toLocaleString('ku-IQ')+'</div></div>').join('')||'<div class="empty">هێشتا چالاکییەکت تۆمار نەکراوە.</div>'))}catch(e){set('<div class="error">⚠️ مێژووی چالاکی بار نەکرا.</div>')}};
  window.megaLoadStats=async function(){try{const [m,p,c,a]=await Promise.all([api('members?select=id&approval_status=eq.approved&limit=1000'),api('posts?select=id&limit=1000'),api('comments?select=id&limit=1000'),api('activities?select=id&limit=1000')]);set('<div class="title">📊 ئاماری کۆمەڵگە</div><div class="grid"><div class="stat"><div class="num">'+m.length+'</div><div>ئەندام</div></div><div class="stat"><div class="num">'+p.length+'</div><div>پۆست</div></div><div class="stat"><div class="num">'+c.length+'</div><div>کۆمێنت</div></div><div class="stat"><div class="num">'+a.length+'</div><div>چالاکی</div></div></div>')}catch(e){set('<div class="error">⚠️ ئامار بار نەکرا.</div>')}};
  window.megaLoadBadges=async function(){try{const n=myName();if(!n){set('<div class="notice">⚠️ سەرەتا ناوت تۆمار بکە.</div>');return}const d=await api('members?select=name,points,posts,comments,likes,badge&name=eq.'+encodeURIComponent(n)+'&limit=1');const x=d[0]||{};const pts=Number(x.points||0);const level=pts>=700?'💎 پلاتین':pts>=300?'🥇 زێڕ':pts>=100?'🥈 زیو':'🥉 برۆنز';const badges=[];if(pts>=10)badges.push('🌱 دەستپێک');if(Number(x.posts||0)>=5)badges.push('📝 نووسەر');if(Number(x.comments||0)>=10)badges.push('💬 گفتوگۆکار');if(Number(x.likes||0)>=20)badges.push('❤️ دڵخواز');set('<div class="title">🏅 دەستکەوتەکانم</div><div class="notice"><b>'+esc(n)+'</b><div style="margin-top:6px">'+level+' • '+pts+' خاڵ</div><div style="margin-top:8px">'+(badges.join(' &nbsp; ')||'هێشتا نیشانێکت نییە؛ بەردەوام بە 🌟')+'</div></div>')}catch(e){set('<div class="error">⚠️ دەستکەوتەکان بار نەکران.</div>')}};
- window.megaSettings=function(){const dark=document.documentElement.classList.contains('dark');set('<div class="title">⚙️ ڕێکخستنەکانی کەسی</div><div class="mega-row"><b>🌙 شێوازی ڕوون/تاریک</b><div class="small">ئێستا: '+(dark?'تاریک':'ڕوون')+'</div><button class="btn" type="button" onclick="toggleDarkMode();megaSettings()">گۆڕین</button></div><div class="mega-row"><b>🔔 ئاگاداریی وێبگەڕ</b><div class="small">دەتوانیت لەسەر ئەم ئامێرە ئاگاداری چالاک بکەیت.</div><button class="btn" type="button" onclick="enableBrowserNotifications()">چالاککردن</button></div><div class="mega-row"><b>👤 ئەکاونت</b><div class="small">بۆ گۆڕینی ئەکاونت، لە بەشی ئەکاونتەکانەوە بەکاربهێنە.</div><button class="btn alt" type="button" onclick="showPage(\'extras\',document.querySelector(\'.nav button[data-page=extras]\'))">کردنەوە</button></div>')}
+ window.megaSettings=function(){const dark=document.documentElement.classList.contains('dark');set('<div class="title">⚙️ ڕێکخستنەکانی کەسی</div><div class="mega-row"><b>🌙 شێوازی ڕوون/تاریک</b><div class="small">ئێستا: '+(dark?'تاریک':'ڕوون')+'</div><button class="btn" type="button" onclick="toggleDarkMode();megaSettings()">گۆڕین</button></div><div class="mega-row"><b>🔔 ئاگاداریی وێبگەڕ</b><div class="small">دەتوانیت لەسەر ئەم ئامێرە ئاگاداری چالاک بکەیت.</div><button class="btn" type="button" onclick="enableBrowserNotifications()">چالاککردن</button></div><div class="mega-row"><b>👤 ئەکاونت</b><div class="small">بۆ گۆڕینی ئەکاونت، لە بەشی ئەکاونتەکانەوە بەکاربهێنە.</div><button class="btn alt" type="button" onclick="__switchPage(\'extras\',document.querySelector(\'.nav button[data-page=extras]\'))">کردنەوە</button></div>')}
 })();
 </script>
 <script id="community-plus-js">
@@ -1012,7 +1030,7 @@ const _showPageOriginal=showPage;showPage=function(id,btn){_showPageOriginal(id,
 const escp=s=>typeof esc==='function'?esc(s):String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const out=h=>{const e=document.getElementById('proplusResult');if(e)e.innerHTML=h};
 const isAdmin=()=>typeof proIsAdmin==='function'&&proIsAdmin();
-window.proplusAssistant=async function(){out('<div class="title">🤖 Smart Assistant</div><p>سڵاو '+escp(myName()||'ئەندام')+'! ئەم یاریدەدەرە ڕێنمایییە خێراکانت دەدات.</p><div class="feature-grid"><button class="feature-btn" onclick="showPage(\'posts\',document.querySelector(\'.nav button[data-page=posts]\'))">📝 پۆست</button><button class="feature-btn" onclick="showPage(\'rank\',document.querySelector(\'.nav button[data-page=rank]\'))">🏆 Ranking</button><button class="feature-btn" onclick="showPage(\'notify\',document.querySelector(\'.nav button[data-page=notify]\'))">🔔 ئاگاداری</button></div>')};
+window.proplusAssistant=async function(){out('<div class="title">🤖 Smart Assistant</div><p>سڵاو '+escp(myName()||'ئەندام')+'! ئەم یاریدەدەرە ڕێنمایییە خێراکانت دەدات.</p><div class="feature-grid"><button class="feature-btn" onclick="__switchPage(\'posts\',document.querySelector(\'.nav button[data-page=posts]\'))">📝 پۆست</button><button class="feature-btn" onclick="__switchPage(\'rank\',document.querySelector(\'.nav button[data-page=rank]\'))">🏆 Ranking</button><button class="feature-btn" onclick="__switchPage(\'notify\',document.querySelector(\'.nav button[data-page=notify]\'))">🔔 ئاگاداری</button></div>')};
 window.proplusHighlights=async function(){try{const p=await api('posts?select=id,author,content,likes,created_at&order=created_at.desc&limit=50');const c=await api('comments?select=post_id&limit=1000');const a=p.map(x=>({...x,score:Number(x.likes||0)*2+c.filter(y=>Number(y.post_id)===Number(x.id)).length})).sort((x,y)=>y.score-x.score).slice(0,5);out('<div class="title">🔥 Daily Highlights</div>'+a.map((x,i)=>'<div class="activity"><b>#'+(i+1)+' '+escp(x.author)+'</b><div>'+escp(String(x.content||'').slice(0,180))+'</div><small>🔥 '+x.score+' • '+new Date(x.created_at).toLocaleString('ku-IQ')+'</small></div>').join('')||'<div class="empty">Highlight نییە.</div>')}catch(e){out('<div class="error">⚠️ نەتوانرا Highlights باربکرێت.</div>')}};
 window.proplusWeekly=async function(){try{const since=new Date(Date.now()-7*86400000).toISOString();const a=await api('activities?select=member_name,activity_type,created_at&created_at=gte.'+encodeURIComponent(since)+'&limit=1000');const m={};a.forEach(x=>{m[x.member_name]=(m[x.member_name]||0)+1});const top=Object.entries(m).sort((x,y)=>y[1]-x[1]).slice(0,10);out('<div class="title">🗓️ Weekly Community Summary</div><p>کورتەی چالاکیی ٧ ڕۆژی ڕابردوو.</p>'+top.map((x,i)=>'<div class="rank"><div class="pos">'+(i+1)+'</div><div class="name">'+escp(x[0])+'</div><div class="pts">'+x[1]+' چالاکی</div></div>').join('')||'<div class="empty">داتا بەردەست نییە.</div>')}catch(e){out('<div class="error">⚠️ کێشە لە Summary.</div>')}};
 window.proplusHall=async function(){try{const m=await api('members?select=name,points,badge,approval_status,device_id&order=points.desc&limit=1000');const a=m.filter(x=>approvalText(x.approval_status)==='approved'&&!String(x.device_id||'').startsWith('__REMOVED__')).slice(0,10);out('<div class="title">🏆 Hall of Fame</div>'+a.map((x,i)=>'<div class="rank"><div class="pos">'+(i+1)+'</div><div class="name">'+escp(x.name)+'<br><span class="small">'+escp(x.badge||'')+'</span></div><div class="pts">⭐ '+Number(x.points||0)+'</div></div>').join(''))}catch(e){out('<div class="error">⚠️ نەتوانرا Hall of Fame باربکرێت.</div>')}};
@@ -1038,7 +1056,7 @@ const old=showPage;showPage=function(id,btn){old(id,btn);if(id==='proplus')propl
 <div id="autoUpdateBar"><div class="au-text" id="autoUpdateText">🆕 وەشانی نوێ بەردەستە.</div><button id="autoUpdateBtn" type="button">🔄 نوێکردنەوە</button><button class="au-close" id="autoUpdateClose" type="button">×</button></div>
 <script id="v7-auto-update-js">
 (function(){
-  const APP_VERSION='2.2.0';
+  const APP_VERSION='2.2.1';
   const KEY='koshki_app_version';
   window.KOSHKi_APP_VERSION=APP_VERSION;
   function cmp(a,b){const A=String(a||'0').split('.').map(x=>parseInt(x,10)||0),B=String(b||'0').split('.').map(x=>parseInt(x,10)||0);for(let i=0;i<3;i++){if((A[i]||0)>(B[i]||0))return 1;if((A[i]||0)<(B[i]||0))return -1}return 0}
